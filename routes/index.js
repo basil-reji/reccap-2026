@@ -21,7 +21,16 @@ router.get('/about', function (req, res, next) {
 router.get('/venue', function (req, res, next) {
   res.render('venue',
     {
-      title: 'Venue| Reccap 2026',
+      title: 'Venue | Reccap 2026',
+      venue: true
+    }
+  );
+});
+
+router.get('/team', function (req, res, next) {
+  res.render('team',
+    {
+      title: 'Team | Reccap 2026',
       venue: true
     }
   );

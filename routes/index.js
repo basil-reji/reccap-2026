@@ -58,4 +58,11 @@ router.get("/registration-fees", function (req, res, next) {
   });
 });
 
+router.get("/author-information", function (req, res, next) {
+  res.render("author-information", {
+    title: "Author Information | Reccap 2026",
+    authorInformation: true,
+  });
+});
+
 module.exports = router;

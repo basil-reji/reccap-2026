@@ -1,3 +1,47 @@
+<div class="deadline-banner">
+    <div class="deadline-content">
+        Last & Final Extension: Owing to multiple requests, the paper submission deadline for IEEE RECCAP 2026 has been
+        extended to 10 January 2026. Kindly note that no further extensions will be provided.
+    </div>
+</div>
+
+<style>
+    .deadline-banner {
+        background-color: #ff6b35;
+        color: white;
+        padding: 12px 0;
+        overflow: hidden;
+        white-space: nowrap;
+        position: absolute;
+        top: 90px;
+        width: 100%;
+        font-family: var(--heading-font);
+        z-index: 20;
+    }
+
+    .deadline-content {
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 25s linear infinite;
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+
+    .deadline-content:hover {
+        animation-play-state: paused;
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        100% {
+            transform: translate(-100%, 0);
+        }
+    }
+</style>
+
 {{>hero}}
 
 
@@ -11,8 +55,17 @@
             <div class="col-lg-6">
                 <div class="content">
                     <h2>RECCAP 2026</h2>
-                    <p class="lead">The International Conference on Recent Advances in Electronics, Communication, Computing, Automation, and Power (RECCAP 2026) is a premier event organized by the IEEE Malabar Subsection and IEEE Kerala Section. It brings together global experts, researchers, and practitioners to explore the latest advancements and emerging trends in these interconnected domains.</p>
-                    <p>RECCAP 2026 aims to address challenges and opportunities presented by the integration of these technologies across sectors such as industry, healthcare, transportation, and energy. The conference focuses on showcasing innovations, promoting interdisciplinary collaboration, addressing global challenges like sustainable energy and smart infrastructure, and enhancing education and training. Join us to share knowledge, discuss complex issues, and propose solutions for the advancement of these critical fields.</p>
+                    <p class="lead">The International Conference on Recent Advances in Electronics, Communication,
+                        Computing, Automation, and Power (RECCAP 2026) is a premier event organized by the IEEE Malabar
+                        Subsection and IEEE Kerala Section. It brings together global experts, researchers, and
+                        practitioners to explore the latest advancements and emerging trends in these interconnected
+                        domains.</p>
+                    <p>RECCAP 2026 aims to address challenges and opportunities presented by the integration of these
+                        technologies across sectors such as industry, healthcare, transportation, and energy. The
+                        conference focuses on showcasing innovations, promoting interdisciplinary collaboration,
+                        addressing global challenges like sustainable energy and smart infrastructure, and enhancing
+                        education and training. Join us to share knowledge, discuss complex issues, and propose
+                        solutions for the advancement of these critical fields.</p>
 
                     {{!-- <div class="stats-grid">
                         <div class="stat-item">
@@ -55,12 +108,14 @@
                         <div class="highlight-card">
                             <i class="bi bi-globe"></i>
                             <h4>Interdisciplinary Collaboration</h4>
-                            <p>Experts from electronics, communication, computing, automation, and power join forces to address global challenges and foster innovation.</p>
+                            <p>Experts from electronics, communication, computing, automation, and power join forces to
+                                address global challenges and foster innovation.</p>
                         </div>
                         <div class="highlight-card">
                             <i class="bi bi-lightbulb-fill"></i>
                             <h4>Innovation & Emerging Trends</h4>
-                            <p>Discover advancements in AI, smart grids, IoT, embedded systems, and next-generation technologies shaping the future.</p>
+                            <p>Discover advancements in AI, smart grids, IoT, embedded systems, and next-generation
+                                technologies shaping the future.</p>
                         </div>
                     </div>
                 </div>

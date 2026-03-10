@@ -58,6 +58,14 @@ router.get("/registration-fees", function (req, res, next) {
   });
 });
 
+router.get("/registration", function (req, res, next) {
+  res.redirect(
+    encodeURI(
+      "/IEEE International Conference on Recent Advances in Electronics, Communication, Computing, Automation and Power (RECCAP 2026) at IIT Palakkad, 22-24 May 2026 (7).pdf"
+    )
+  );
+});
+
 router.get("/author-guidelines", function (req, res, next) {
   res.render("author-guidelines", {
     title: "Author Guidelines | Reccap 2026",

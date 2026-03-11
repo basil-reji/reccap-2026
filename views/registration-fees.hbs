@@ -1,26 +1,37 @@
 <!-- Page Title -->
 <div class="page-title dark-background" style="background-image: url(/images/events/venue-1.webp);">
     <div class="container position-relative">
-        <h1>Registration Fees</h1>
-        <p>Complete fee structure for RECCAP 2026</p>
+        <h1>Registration</h1>
+        <p>Registration fees, timeline, and official guidelines for RECCAP 2026</p>
         <nav class="breadcrumbs">
             <ol>
                 <li><a href="/">Home</a></li>
-                <li class="current">Registration Fees</li>
+                <li class="current">Registration</li>
             </ol>
         </nav>
     </div>
 </div><!-- End Page Title -->
 
-<section id="registration-fees" class="terms-of-service section">
+<section id="registration" class="terms-of-service section">
     <div class="container">
         <div class="tos-header">
             <span class="last-updated">RECCAP 2026</span>
-            <h2>Registration Fees</h2>
+            <h2>Registration</h2>
+            <p class="registration-intro">Review the fee structure below and use the official registration guidelines PDF for the complete process.</p>
         </div>
 
         <div class="tos-content">
             <div class="content-section">
+                <div class="guidelines-card">
+                    <div class="guidelines-copy">
+                        <span class="guidelines-label">Registration Guidelines</span>
+                        <h3>Official Registration Guidelines</h3>
+                        <p>Access the conference PDF for detailed registration instructions, payment information, and related policies.</p>
+                    </div>
+                    <a href="{{registrationGuidelinesPdf}}" class="btn btn-primary" target="_blank" rel="noopener">Open Guidelines PDF</a>
+                </div>
+
+                <h3 class="section-title">Registration Fees</h3>
                 <div class="fees-table-container">
                     <table class="fees-table">
                         <caption>Registration Fees</caption>
@@ -141,6 +152,52 @@
 </section>
 
 <style>
+.registration-intro {
+    margin: 12px 0 0;
+    color: color-mix(in srgb, var(--default-color), transparent 15%);
+}
+
+.guidelines-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 28px;
+    padding: 28px 32px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), white 92%), color-mix(in srgb, var(--accent-color), white 82%));
+    border: 1px solid color-mix(in srgb, var(--accent-color), transparent 75%);
+    box-shadow: 0 8px 24px color-mix(in srgb, var(--default-color), transparent 92%);
+}
+
+.guidelines-label {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    background: color-mix(in srgb, var(--accent-color), white 88%);
+}
+
+.guidelines-copy h3 {
+    margin-bottom: 10px;
+    color: var(--heading-color);
+}
+
+.guidelines-copy p {
+    margin: 0;
+    max-width: 720px;
+}
+
+.section-title {
+    margin: 0;
+    color: var(--heading-color);
+}
+
 .fees-table-container {
     margin: 40px 0;
     overflow-x: auto;
@@ -263,6 +320,12 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .guidelines-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+    }
+
     .fees-table-container {
         margin: 20px -15px;
     }

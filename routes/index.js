@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const registrationGuidelinesPdf = encodeURI(
-  "/IEEE International Conference on Recent Advances in Electronics, Communication, Computing, Automation and Power (RECCAP 2026) at IIT Palakkad, 22-24 May 2026 (7).pdf"
+  "/V1-RECCAP 2026 Registration.pdf"
 );
 
 /* GET home page. */

@@ -3,9 +3,6 @@
         <div class="deadline-content">
             Early Bird Registration till 31 Mar 2026 | Regular-rate registration till 15 Apr 2026
         </div>
-        <a href="{{registrationUrl}}" class="btn btn-light btn-sm deadline-action" target="_blank" rel="noopener">
-            Register Now
-        </a>
     </div>
 </div>
 
@@ -29,21 +26,13 @@
     .deadline-banner-inner {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        gap: 16px;
+        justify-content: center;
     }
 
     .deadline-content {
         font-weight: 600;
         font-size: 1.1rem;
-    }
-
-    .deadline-action {
-        border: 0;
-        border-radius: 999px;
-        padding: 8px 18px;
-        font-weight: 700;
-        color: #0f172a;
+        text-align: center;
     }
 
     @media (max-width: 768px) {
@@ -52,8 +41,6 @@
         }
 
         .deadline-banner-inner {
-            flex-direction: column;
-            justify-content: center;
             text-align: center;
         }
 

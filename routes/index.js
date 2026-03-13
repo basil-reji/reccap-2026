@@ -4,7 +4,7 @@ const registrationGuidelinesPdf = encodeURI(
   "/V1-RECCAP 2026 Registration.pdf"
 );
 const cameraReadySubmissionPdf = encodeURI(
-  "/V2_Reccap 2026  Camera Ready Submission .pdf"
+  "/V3_Reccap 2026  Camera Ready Submission.pdf"
 );
 
 /* GET home page. */

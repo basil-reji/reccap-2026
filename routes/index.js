@@ -3,6 +3,9 @@ const router = express.Router();
 const registrationGuidelinesPdf = encodeURI(
   "/V1-RECCAP 2026 Registration.pdf"
 );
+const cameraReadySubmissionPdf = encodeURI(
+  "/V2_Reccap 2026  Camera Ready Submission .pdf"
+);
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
@@ -70,6 +73,14 @@ router.get("/author-guidelines", function (req, res, next) {
   res.render("author-guidelines", {
     title: "Author Guidelines | Reccap 2026",
     authorGuidelines: true,
+  });
+});
+
+router.get("/camera-ready-submission", function (req, res, next) {
+  res.render("camera-ready-submission", {
+    title: "Camera Ready Submission | Reccap 2026",
+    cameraReadySubmission: true,
+    cameraReadySubmissionPdf,
   });
 });
 

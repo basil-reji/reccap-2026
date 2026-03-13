@@ -15,6 +15,7 @@ dotenv.config();
 
 // App config
 const app = express();
+app.locals.registrationUrl = "https://snaptiqz.com/reccap";
 
 // view engine setup
 const hbs = engine.create({

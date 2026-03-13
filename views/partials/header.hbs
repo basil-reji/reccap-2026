@@ -16,6 +16,7 @@
                     <ul>
                         <li><a href="/RECCAP2026_Brochure.pdf" target="_blank" rel="noopener">Conference Brochure</a></li>
                         <li><a href="/author-guidelines" {{#if authorGuidelines }}class="active" {{/if}}>Author Guidelines</a></li>
+                        <li><a href="/camera-ready-submission" {{#if cameraReadySubmission }}class="active" {{/if}}>Camera Ready Submission</a></li>
                         <li><a href="/call-for-papers" {{#if callForPapers }}class="active" {{/if}}>Call for Papers</a></li>
                         <li><a href="/important-dates" {{#if importantDates }}class="active" {{/if}}>Important Dates</a></li>
                         <li><a href="/registration" {{#if registration }}class="active" {{/if}}>Registration</a></li>
@@ -28,7 +29,9 @@
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <!-- <a class="btn-getstarted" href="/register">Register Now</a>  -->
+        {{#unless home}}
+        <a class="btn-getstarted" href="{{registrationUrl}}" target="_blank" rel="noopener">Register Now</a>
+        {{/unless}}
 
     </div>
 </header>

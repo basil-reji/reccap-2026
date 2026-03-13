@@ -28,7 +28,10 @@
                         <h3>V1-RECCAP 2026 Registration</h3>
                         <p>This page reflects the registration fee table and registration guidelines from the official conference PDF.</p>
                     </div>
-                    <a href="{{registrationGuidelinesPdf}}" class="btn btn-primary" target="_blank" rel="noopener">Open Registration PDF</a>
+                    <div class="document-actions">
+                        <a href="{{registrationUrl}}" class="btn btn-primary" target="_blank" rel="noopener">Register Now</a>
+                        <a href="{{registrationGuidelinesPdf}}" class="btn btn-outline-primary" target="_blank" rel="noopener">Open Registration PDF</a>
+                    </div>
                 </div>
 
                 <h3 class="section-title">Registration Fee Table (Authors and Attendees)</h3>
@@ -171,6 +174,12 @@
 .document-copy p {
     margin: 0;
     max-width: 720px;
+}
+
+.document-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .section-title {
@@ -323,6 +332,14 @@
     .fees-table .category-cell,
     .fees-table .membership-cell {
         min-width: 150px;
+    }
+
+    .document-actions {
+        width: 100%;
+    }
+
+    .document-actions .btn {
+        width: 100%;
     }
 }
 

@@ -1816,6 +1816,357 @@ section,
   }
 }
 
+.featured-speakers {
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-speakers::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 320px;
+  background:
+    radial-gradient(circle at top left, color-mix(in srgb, var(--accent-color), transparent 86%) 0%, transparent 58%),
+    linear-gradient(180deg, color-mix(in srgb, var(--accent-color), transparent 97%) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.featured-speakers .container {
+  position: relative;
+  z-index: 1;
+}
+
+.featured-speakers .keynote-heading {
+  margin-bottom: 3rem;
+}
+
+.featured-speakers .section-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  color: var(--accent-color);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.featured-speakers .section-kicker::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent-color), transparent 88%);
+}
+
+.featured-speakers .keynote-heading h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.featured-speakers .keynote-heading p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 18%);
+}
+
+.featured-speakers .keynote-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  justify-content: flex-end;
+}
+
+.featured-speakers .keynote-pills span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.9rem 1.15rem;
+  border-radius: 999px;
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 86%);
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 92%);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.featured-speakers .keynote-pills i {
+  color: var(--accent-color);
+}
+
+.featured-speakers .speaker-card.keynote-featured {
+  border-radius: 24px;
+  border-width: 1px;
+}
+
+.featured-speakers .speaker-card.keynote-featured .row {
+  min-height: 100%;
+}
+
+.featured-speakers .speaker-card.keynote-featured .speaker-image {
+  height: 100%;
+  min-height: 100%;
+}
+
+.featured-speakers .speaker-card.keynote-featured .speaker-image img {
+  height: 100%;
+  min-height: 100%;
+  object-position: var(--keynote-featured-focus, center top);
+  transform: scale(var(--keynote-featured-scale, 1));
+  transform-origin: center top;
+}
+
+.featured-speakers .speaker-card.keynote-featured .speaker-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.featured-speakers .speaker-card.keynote-featured .speaker-company {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.featured-speakers .speaker-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.featured-speakers .speaker-highlights span {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+  color: var(--heading-color);
+  font-size: 0.83rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.featured-speakers .keynote-summary-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--accent-color), transparent 95%) 100%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+  box-shadow: 0 18px 45px color-mix(in srgb, var(--default-color), transparent 92%);
+}
+
+.featured-speakers .keynote-summary-card::before {
+  left: 2.5rem;
+  transform: none;
+}
+
+.featured-speakers .keynote-summary-card blockquote p {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-style: normal;
+  color: var(--heading-color);
+}
+
+.featured-speakers .keynote-summary-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.featured-speakers .keynote-summary-list .summary-item {
+  padding: 1rem 1.1rem;
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--surface-color), transparent 8%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 90%);
+}
+
+.featured-speakers .keynote-summary-list .summary-item strong {
+  display: block;
+  color: var(--heading-color);
+  font-size: 0.98rem;
+  margin-bottom: 0.25rem;
+}
+
+.featured-speakers .keynote-summary-list .summary-item span {
+  display: block;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: color-mix(in srgb, var(--default-color), transparent 22%);
+}
+
+.featured-speakers .speaker-card.compact.keynote-compact {
+  border-radius: 20px;
+  --keynote-card-image-height: 280px;
+  --keynote-image-focus: center top;
+  --keynote-image-scale: 1;
+  --keynote-image-scale-hover: 1.06;
+}
+
+.featured-speakers .speaker-card.compact.keynote-compact .speaker-image {
+  height: var(--keynote-card-image-height);
+  background: color-mix(in srgb, var(--accent-color), white 94%);
+}
+
+.featured-speakers .speaker-card.compact.keynote-compact .speaker-image img {
+  object-position: var(--keynote-image-focus);
+  transform: scale(var(--keynote-image-scale));
+  transform-origin: center top;
+}
+
+.featured-speakers .speaker-card.compact.keynote-compact .speaker-content {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - var(--keynote-card-image-height));
+}
+
+.featured-speakers .speaker-card.compact.keynote-compact .speaker-company {
+  min-height: 3.9em;
+}
+
+.featured-speakers .speaker-card.compact.keynote-compact .speaker-topic {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.featured-speakers .speaker-card.compact.keynote-compact .speaker-image:hover img {
+  transform: scale(var(--keynote-image-scale-hover));
+}
+
+.featured-speakers .keynote-milos {
+  --keynote-featured-focus: 44% 12%;
+  --keynote-featured-scale: 1.03;
+}
+
+.featured-speakers .speaker-card.compact.keynote-compact.keynote-sudeendra {
+  --keynote-image-focus: 24% 16%;
+  --keynote-image-scale: 1.1;
+  --keynote-image-scale-hover: 1.16;
+}
+
+.featured-speakers .speaker-card.compact.keynote-compact.keynote-gopakumar {
+  --keynote-image-focus: 52% 18%;
+  --keynote-image-scale: 1.08;
+  --keynote-image-scale-hover: 1.14;
+}
+
+.featured-speakers .speaker-card.compact.keynote-compact.keynote-suresh {
+  --keynote-image-focus: 70% 14%;
+  --keynote-image-scale: 1.12;
+  --keynote-image-scale-hover: 1.18;
+}
+
+.featured-speakers .speaker-card.compact.keynote-compact.keynote-sateesh {
+  --keynote-image-focus: 50% 12%;
+  --keynote-image-scale: 1.16;
+  --keynote-image-scale-hover: 1.22;
+}
+
+@media (max-width: 1199px) {
+  .featured-speakers .keynote-pills {
+    justify-content: flex-start;
+  }
+
+  .featured-speakers .speaker-card.keynote-featured .speaker-image {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-speakers::before {
+    height: 220px;
+  }
+
+  .featured-speakers .keynote-heading {
+    margin-bottom: 2rem;
+  }
+
+  .featured-speakers .keynote-heading h2 {
+    font-size: 2rem;
+  }
+
+  .featured-speakers .keynote-pills span {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .featured-speakers .speaker-card.keynote-featured .speaker-image {
+    min-height: 320px;
+  }
+
+  .featured-speakers .speaker-highlights {
+    gap: 0.6rem;
+  }
+
+  .featured-speakers .speaker-highlights span {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .featured-speakers .keynote-summary-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .featured-speakers .keynote-summary-card::before {
+    left: 1.5rem;
+  }
+
+  .featured-speakers .speaker-card.compact.keynote-compact .speaker-image {
+    height: 300px;
+  }
+
+  .featured-speakers .speaker-card.compact.keynote-compact .speaker-content {
+    height: auto;
+  }
+
+  .featured-speakers .speaker-card.compact.keynote-compact .speaker-company {
+    min-height: 0;
+  }
+
+  .featured-speakers .keynote-milos {
+    --keynote-featured-focus: 46% 10%;
+    --keynote-featured-scale: 1.08;
+  }
+
+  .featured-speakers .speaker-card.compact.keynote-compact {
+    --keynote-card-image-height: 300px;
+  }
+
+  .featured-speakers .speaker-card.compact.keynote-compact.keynote-sudeendra {
+    --keynote-image-focus: 25% 16%;
+    --keynote-image-scale: 1.06;
+    --keynote-image-scale-hover: 1.12;
+  }
+
+  .featured-speakers .speaker-card.compact.keynote-compact.keynote-gopakumar {
+    --keynote-image-focus: 52% 16%;
+    --keynote-image-scale: 1.04;
+    --keynote-image-scale-hover: 1.1;
+  }
+
+  .featured-speakers .speaker-card.compact.keynote-compact.keynote-suresh {
+    --keynote-image-focus: 68% 12%;
+    --keynote-image-scale: 1.08;
+    --keynote-image-scale-hover: 1.14;
+  }
+
+  .featured-speakers .speaker-card.compact.keynote-compact.keynote-sateesh {
+    --keynote-image-focus: 50% 10%;
+    --keynote-image-scale: 1.08;
+    --keynote-image-scale-hover: 1.14;
+  }
+}
+
 /*--------------------------------------------------------------
 # Schedule Section
 --------------------------------------------------------------*/

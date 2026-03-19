@@ -1,0 +1,155 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "RECCAP" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - heading "RECCAP" [level=1] [ref=e5]
+      - navigation [ref=e6]:
+        - list [ref=e7]:
+          - listitem [ref=e8]:
+            - link "Home" [ref=e9] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e10]:
+            - link "About" [ref=e11] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e12]:
+            - link "Conference " [ref=e13] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e14]: Conference
+              - generic [ref=e15]: 
+          - listitem [ref=e16]:
+            - link "Venue" [ref=e17] [cursor=pointer]:
+              - /url: /venue
+          - listitem [ref=e18]:
+            - link "Contact" [ref=e19] [cursor=pointer]:
+              - /url: /contact
+        - text: 
+  - main [ref=e20]:
+    - generic [ref=e23]: Early Bird Registration till 31 Mar 2026 | Regular-rate registration till 15 Apr 2026
+    - generic [ref=e30]:
+      - heading "RECCAP 2026" [level=1] [ref=e31]
+      - paragraph [ref=e32]: International Conference on Recent Advances in Electronics, Communication, Computing, Automation, and Power
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]: 
+          - generic [ref=e36]: May 22 - 24, 2026
+        - generic [ref=e37]:
+          - generic [ref=e38]: 
+          - generic [ref=e39]: IIT Palakkad, Kerala, India
+        - generic [ref=e40]:
+          - generic [ref=e41]: 
+          - generic [ref=e42]: Organized by IEEE Malabar Subsection & IEEE Kerala Section
+      - generic [ref=e43]:
+        - link "Register Now" [ref=e44] [cursor=pointer]:
+          - /url: https://snaptiqz.com/reccap
+        - link "Important Dates" [ref=e45] [cursor=pointer]:
+          - /url: /important-dates
+    - generic [ref=e48]:
+      - generic [ref=e50]:
+        - heading "RECCAP 2026" [level=2] [ref=e51]
+        - paragraph [ref=e52]: The International Conference on Recent Advances in Electronics, Communication, Computing, Automation, and Power (RECCAP 2026) is a premier event organized by the IEEE Malabar Subsection and IEEE Kerala Section. It brings together global experts, researchers, and practitioners to explore the latest advancements and emerging trends in these interconnected domains.
+        - paragraph [ref=e53]: RECCAP 2026 aims to address challenges and opportunities presented by the integration of these technologies across sectors such as industry, healthcare, transportation, and energy. The conference focuses on showcasing innovations, promoting interdisciplinary collaboration, addressing global challenges like sustainable energy and smart infrastructure, and enhancing education and training. Join us to share knowledge, discuss complex issues, and propose solutions for the advancement of these critical fields.
+        - generic [ref=e54]:
+          - link "Call for Papers" [ref=e55] [cursor=pointer]:
+            - /url: /call-for-papers
+          - link "Organizing Committee" [ref=e56] [cursor=pointer]:
+            - /url: /committee
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - img "Tech Summit" [ref=e60]
+          - generic [ref=e62]:
+            - generic [ref=e63]: 
+            - generic [ref=e64]: May 22 - 24, 2026
+        - generic [ref=e65]:
+          - generic [ref=e66]:
+            - generic [ref=e67]: 
+            - heading "Interdisciplinary Collaboration" [level=4] [ref=e68]
+            - paragraph [ref=e69]: Experts from electronics, communication, computing, automation, and power join forces to address global challenges and foster innovation.
+          - generic [ref=e70]:
+            - generic [ref=e71]: 
+            - heading "Innovation & Emerging Trends" [level=4] [ref=e72]
+            - paragraph [ref=e73]: Discover advancements in AI, smart grids, IoT, embedded systems, and next-generation technologies shaping the future.
+    - generic [ref=e75]:
+      - generic [ref=e76]:
+        - generic [ref=e77]:
+          - generic [ref=e78]: Keynote Speakers
+          - heading "Distinguished voices shaping RECCAP 2026" [level=2] [ref=e79]
+          - paragraph [ref=e80]: RECCAP 2026 brings together leaders from IEEE, premier academic institutions, and industry to anchor the conference with conversations on trustworthy AI, engineering leadership, advanced electronics, and product innovation.
+        - generic [ref=e82]:
+          - generic [ref=e83]:
+            - generic [ref=e84]: 
+            - text: 5 keynote speakers
+          - generic [ref=e85]:
+            - generic [ref=e86]: 
+            - text: May 22 - 24, 2026
+          - generic [ref=e87]:
+            - generic [ref=e88]: 
+            - text: IIT Palakkad
+      - generic [ref=e89]:
+        - article [ref=e91]:
+          - generic [ref=e92]:
+            - img "Prof. Milos Manic" [ref=e95]
+            - generic [ref=e97]:
+              - generic [ref=e98]: Flagship Keynote
+              - heading "Prof. Milos Manic" [level=3] [ref=e99]
+              - paragraph [ref=e100]: Past IES President
+              - paragraph [ref=e101]: Virginia Commonwealth University
+              - generic [ref=e102]:
+                - generic [ref=e103]: Professor, Computer Science Department
+                - generic [ref=e104]: Director, VCU Cybersecurity Center
+              - generic [ref=e105]:
+                - heading "Talk Focus" [level=4] [ref=e106]
+                - paragraph [ref=e107]: Trustworthy & Explainable AI
+        - generic [ref=e109]:
+          - text: "\""
+          - blockquote [ref=e110]:
+            - paragraph [ref=e111]: Five keynote sessions will connect AI, technology management, electronics, computing, and product engineering through a shared interdisciplinary stage at RECCAP 2026.
+          - generic [ref=e112]:
+            - generic [ref=e113]:
+              - strong [ref=e114]: Academic voices
+              - generic [ref=e115]: Virginia Commonwealth University, IISc Bangalore, and IIT Roorkee
+            - generic [ref=e116]:
+              - strong [ref=e117]: IEEE leadership
+              - generic [ref=e118]: Keynote participation from IEEE TEMS and former IES leadership
+            - generic [ref=e119]:
+              - strong [ref=e120]: Industry perspective
+              - generic [ref=e121]: Product and design insights from Amara Raja Design Alpha
+      - generic [ref=e122]:
+        - article [ref=e124]:
+          - img "Dr. Sudeendra Koushik" [ref=e126]
+          - generic [ref=e127]:
+            - heading "Dr. Sudeendra Koushik" [level=3] [ref=e128]
+            - paragraph [ref=e129]: President, IEEE TEMS
+            - paragraph [ref=e130]: Innovator, TEDx Speaker, Entrepreneur, Intrapreneur
+            - generic [ref=e131]: IEEE Leadership Keynote
+        - article [ref=e133]:
+          - img "Prof. K. Gopakumar" [ref=e135]
+          - generic [ref=e136]:
+            - heading "Prof. K. Gopakumar" [level=3] [ref=e137]
+            - paragraph [ref=e138]: Professor
+            - paragraph [ref=e139]: Department of Electronic Systems Engineering, Indian Institute of Science (IISc), Bangalore
+            - generic [ref=e140]: Academic Keynote
+        - article [ref=e142]:
+          - img "Dr. Suresh Nair" [ref=e144]
+          - generic [ref=e145]:
+            - heading "Dr. Suresh Nair" [level=3] [ref=e146]
+            - paragraph [ref=e147]: Founder and Managing Director
+            - paragraph [ref=e148]: Amara Raja Design Alpha
+            - generic [ref=e149]: Industry Keynote
+        - article [ref=e151]:
+          - img "Dr. Peddoju Sateesh Kumar" [ref=e153]
+          - generic [ref=e154]:
+            - heading "Dr. Peddoju Sateesh Kumar" [level=3] [ref=e155]
+            - paragraph [ref=e156]: Professor
+            - paragraph [ref=e157]: IIT Roorkee
+            - generic [ref=e158]: Academic Keynote
+  - contentinfo [ref=e159]:
+    - generic [ref=e160]:
+      - paragraph [ref=e161]:
+        - text: © Copyright
+        - strong [ref=e162]: IEEE Malabar Subsection & IEEE Kerala Section
+        - text: All Rights Reserved
+      - generic [ref=e163]:
+        - text: Designed by
+        - link "BootstrapMade" [ref=e164] [cursor=pointer]:
+          - /url: https://bootstrapmade.com/

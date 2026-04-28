@@ -29,6 +29,13 @@ router.get("/venue", function (req, res, next) {
   });
 });
 
+router.get("/nearby-info", function (req, res, next) {
+  res.render("nearby-info", {
+    title: "Nearby Info | Reccap 2026",
+    nearbyInfo: true,
+  });
+});
+
 router.get("/call-for-papers", function (req, res, next) {
   res.render("call-for-papers", {
     title: "Call for Papers | Reccap 2026",

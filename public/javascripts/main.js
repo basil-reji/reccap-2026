@@ -80,13 +80,15 @@
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
   }
-  scrollTop.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+  if (scrollTop) {
+    scrollTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     });
-  });
+  }
 
   window.addEventListener('load', toggleScrollTop);
   document.addEventListener('scroll', toggleScrollTop);
@@ -181,5 +183,57 @@
       }
     });
   });
+
+  /**
+   * Subtle reveal interactions
+   */
+  function initRevealInteractions() {
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const revealSelectors = [
+      '.intro .content',
+      '.intro .visual-section',
+      '.intro .highlight-card',
+      '.featured-speakers .keynote-heading',
+      '.featured-speakers .speaker-card',
+      '.featured-speakers .keynote-summary-card',
+      '.venue-info-section',
+      '.venue-map',
+      '.travel-info',
+      '.hostel-accommodation-section',
+      '.nearby-info .tourist-pdf-section',
+      '.nearby-info .hotel-sheet-section',
+      '.tickets .ticket-item',
+      '.buy-tickets .ticket-form-wrapper'
+    ];
+
+    const revealItems = document.querySelectorAll(revealSelectors.join(','));
+
+    if (!revealItems.length) return;
+
+    revealItems.forEach((item, index) => {
+      item.classList.add('site-reveal');
+      item.style.setProperty('--reveal-delay', `${Math.min(index % 5, 4) * 70}ms`);
+    });
+
+    if (reduceMotion || !('IntersectionObserver' in window)) {
+      revealItems.forEach(item => item.classList.add('is-visible'));
+      return;
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      });
+    }, {
+      threshold: 0.16,
+      rootMargin: '0px 0px -8% 0px'
+    });
+
+    revealItems.forEach(item => observer.observe(item));
+  }
+
+  window.addEventListener('load', initRevealInteractions);
 
 })();

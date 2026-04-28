@@ -10,63 +10,63 @@ const cameraReadySubmissionPdf = encodeURI(
 /* GET home page. */
 router.get("/", function (req, res, next) {
   res.render("index", {
-    title: "Reccap 2026",
+    title: "RECCAP 2026",
     home: true,
   });
 });
 
 router.get("/about", function (req, res, next) {
   res.render("about", {
-    title: "About | Reccap 2026",
+    title: "About | RECCAP 2026",
     about: true,
   });
 });
 
 router.get("/venue", function (req, res, next) {
   res.render("venue", {
-    title: "Venue | Reccap 2026",
+    title: "Venue | RECCAP 2026",
     venue: true,
   });
 });
 
 router.get("/nearby-info", function (req, res, next) {
   res.render("nearby-info", {
-    title: "Nearby Info | Reccap 2026",
+    title: "Nearby Info | RECCAP 2026",
     nearbyInfo: true,
   });
 });
 
 router.get("/call-for-papers", function (req, res, next) {
   res.render("call-for-papers", {
-    title: "Call for Papers | Reccap 2026",
+    title: "Call for Papers | RECCAP 2026",
     callForPapers: true,
   });
 });
 
 router.get("/important-dates", function (req, res, next) {
   res.render("important-dates", {
-    title: "Important Dates | Reccap 2026",
+    title: "Important Dates | RECCAP 2026",
     importantDates: true,
   });
 });
 
 router.get("/committee", function (req, res, next) {
   res.render("committee", {
-    title: "Organizing Committee | Reccap 2026",
+    title: "Organizing Committee | RECCAP 2026",
     committee: true,
   });
 });
 
 router.get("/contact", function (req, res, next) {
   res.render("contact", {
-    title: "Contact Us | Reccap 2026",
+    title: "Contact Us | RECCAP 2026",
     contact: true,
   });
 });
 
 router.get("/registration", function (req, res, next) {
   res.render("registration-fees", {
-    title: "Registration | Reccap 2026",
+    title: "Registration | RECCAP 2026",
     registration: true,
     registrationGuidelinesPdf,
   });
@@ -78,14 +78,14 @@ router.get("/registration-fees", function (req, res, next) {
 
 router.get("/author-guidelines", function (req, res, next) {
   res.render("author-guidelines", {
-    title: "Author Guidelines | Reccap 2026",
+    title: "Author Guidelines | RECCAP 2026",
     authorGuidelines: true,
   });
 });
 
 router.get("/camera-ready-submission", function (req, res, next) {
   res.render("camera-ready-submission", {
-    title: "Camera Ready Submission | Reccap 2026",
+    title: "Camera Ready Submission | RECCAP 2026",
     cameraReadySubmission: true,
     cameraReadySubmissionPdf,
   });

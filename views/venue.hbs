@@ -56,7 +56,6 @@
             </div> --}}
         </div>
 
-
         <div class="row mt-5">
             <div class="col-lg-12">
                 <div class="venue-info-section">
@@ -146,9 +145,35 @@
                 </div>
             </div>
         </div>
+
+    <div class="row mt-5">
+        <div class="col-lg-12">
+            <div class="hostel-accommodation-section">
+                <div class="hostel-accommodation-header">
+                    <div class="hostel-accommodation-icon">
+                        <i class="bi bi-house-door-fill"></i>
+                    </div>
+                    <div>
+                        <h4>Hostel Accommodation</h4>
+                        <p>Delegates can book hostels at IIT Palakkad on a payable basis after 10th May 2026 on a first come first serve basis.</p>
+                    </div>
+                </div>
+
+                <div class="hostel-accommodation-grid">
+                    <div class="hostel-accommodation-item">
+                        <span class="item-label">Room sharing</span>
+                        <h5>Double / Triple Sharing</h5>
+                        <p>Hostel accommodation will be arranged in double or triple sharing rooms.</p>
+                    </div>
+                    <div class="hostel-accommodation-item">
+                        <span class="item-label">Booking details</span>
+                        <h5>Website update after 10th May 2026</h5>
+                        <p>Link for booking and payment details will be updated in the website after 10th May 2026.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-
 
     {{!-- <div class="row mt-5">
         <div class="col-lg-12">
@@ -262,5 +287,97 @@
     font-size: 0.9em;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.hostel-accommodation-section {
+    padding: 32px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), white 92%), #fff);
+    border: 1px solid color-mix(in srgb, var(--accent-color), transparent 78%);
+    box-shadow: 0 8px 24px color-mix(in srgb, var(--default-color), transparent 92%);
+}
+
+.hostel-accommodation-header {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.hostel-accommodation-icon {
+    flex: 0 0 auto;
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-color);
+    color: var(--contrast-color);
+    font-size: 1.4rem;
+    box-shadow: 0 8px 20px color-mix(in srgb, var(--accent-color), transparent 55%);
+}
+
+.hostel-accommodation-header h4 {
+    margin-bottom: 8px;
+    color: var(--heading-color);
+}
+
+.hostel-accommodation-header p {
+    margin: 0;
+    color: color-mix(in srgb, var(--default-color), transparent 15%);
+    line-height: 1.7;
+}
+
+.hostel-accommodation-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.hostel-accommodation-item {
+    padding: 22px;
+    border-radius: 14px;
+    background: var(--surface-color);
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+}
+
+.hostel-accommodation-item .item-label {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-color);
+    background: color-mix(in srgb, var(--accent-color), white 88%);
+}
+
+.hostel-accommodation-item h5 {
+    margin-bottom: 10px;
+    color: var(--heading-color);
+}
+
+.hostel-accommodation-item p {
+    margin: 0;
+    color: #666;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .hostel-accommodation-section {
+        padding: 24px;
+    }
+
+    .hostel-accommodation-header {
+        flex-direction: column;
+    }
+
+    .hostel-accommodation-grid {
+        grid-template-columns: 1fr;
+    }
+
 }
 </style>

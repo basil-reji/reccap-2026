@@ -6,6 +6,8 @@ const registrationGuidelinesPdf = encodeURI(
 const cameraReadySubmissionPdf = encodeURI(
   "/V3_Reccap 2026  Camera Ready Submission.pdf"
 );
+const schedulePdf = encodeURI("/RECCAP Schedule v1.pdf");
+const paperIdPdf = encodeURI("/RECCAP Paper ID v1.pdf");
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
@@ -29,6 +31,13 @@ router.get("/venue", function (req, res, next) {
   });
 });
 
+router.get("/nearby-info", function (req, res, next) {
+  res.render("nearby-info", {
+    title: "Nearby Info | Reccap 2026",
+    nearbyInfo: true,
+  });
+});
+
 router.get("/call-for-papers", function (req, res, next) {
   res.render("call-for-papers", {
     title: "Call for Papers | Reccap 2026",
@@ -40,6 +49,15 @@ router.get("/important-dates", function (req, res, next) {
   res.render("important-dates", {
     title: "Important Dates | Reccap 2026",
     importantDates: true,
+  });
+});
+
+router.get("/schedule", function (req, res, next) {
+  res.render("schedule", {
+    title: "Schedule | Reccap 2026",
+    schedule: true,
+    schedulePdf,
+    paperIdPdf,
   });
 });
 

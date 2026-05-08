@@ -2042,15 +2042,9 @@ section,
   transform: scale(var(--keynote-image-scale-hover));
 }
 
-.featured-speakers .keynote-milos {
-  --keynote-featured-focus: 44% 12%;
-  --keynote-featured-scale: 1.03;
-}
-
-.featured-speakers .speaker-card.compact.keynote-compact.keynote-sudeendra {
-  --keynote-image-focus: 24% 16%;
-  --keynote-image-scale: 1.1;
-  --keynote-image-scale-hover: 1.16;
+.featured-speakers .keynote-sudeendra-featured {
+  --keynote-featured-focus: 25% 16%;
+  --keynote-featured-scale: 1.08;
 }
 
 .featured-speakers .speaker-card.compact.keynote-compact.keynote-gopakumar {
@@ -2133,19 +2127,13 @@ section,
     min-height: 0;
   }
 
-  .featured-speakers .keynote-milos {
-    --keynote-featured-focus: 46% 10%;
-    --keynote-featured-scale: 1.08;
+  .featured-speakers .keynote-sudeendra-featured {
+    --keynote-featured-focus: 25% 16%;
+    --keynote-featured-scale: 1.06;
   }
 
   .featured-speakers .speaker-card.compact.keynote-compact {
     --keynote-card-image-height: 300px;
-  }
-
-  .featured-speakers .speaker-card.compact.keynote-compact.keynote-sudeendra {
-    --keynote-image-focus: 25% 16%;
-    --keynote-image-scale: 1.06;
-    --keynote-image-scale-hover: 1.12;
   }
 
   .featured-speakers .speaker-card.compact.keynote-compact.keynote-gopakumar {

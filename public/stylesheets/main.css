@@ -1931,6 +1931,10 @@ section,
   height: 100%;
 }
 
+.featured-speakers .speaker-card.keynote-featured .speaker-content .speaker-session {
+  text-align: center;
+}
+
 .featured-speakers .speaker-card.keynote-featured .speaker-company {
   font-size: 1rem;
   margin-bottom: 1rem;
@@ -2035,7 +2039,8 @@ section,
 
 .featured-speakers .speaker-card.compact.keynote-compact .speaker-topic {
   margin-top: auto;
-  align-self: flex-start;
+  align-self: center;
+  text-align: center;
 }
 
 .featured-speakers .speaker-card.compact.keynote-compact .speaker-image:hover img {

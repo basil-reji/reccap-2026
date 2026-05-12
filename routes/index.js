@@ -7,7 +7,7 @@ const cameraReadySubmissionPdf = encodeURI(
   "/V3_Reccap 2026  Camera Ready Submission.pdf"
 );
 const schedulePdf = encodeURI("/RECCAP Schedule v1.pdf");
-const paperIdPdf = encodeURI("/RECCAP Paper ID v1.pdf");
+const paperIdPdf = encodeURI("/RECCAP Paper ID v2.pdf");
 
 /* GET home page. */
 router.get("/", function (req, res, next) {

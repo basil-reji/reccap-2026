@@ -214,6 +214,85 @@ h6 {
   --background-color: rgba(2, 5, 34, 0.9);
 }
 
+.site-notification {
+  position: fixed;
+  top: 74px;
+  left: 0;
+  right: 0;
+  z-index: 996;
+  overflow: hidden;
+  border-top: 1px solid color-mix(in srgb, var(--accent-color), transparent 72%);
+  border-bottom: 1px solid color-mix(in srgb, var(--accent-color), transparent 72%);
+  background: color-mix(in srgb, var(--accent-color), #020522 28%);
+  box-shadow: 0 10px 30px color-mix(in srgb, #000000, transparent 86%);
+}
+
+.notification-marquee {
+  display: flex;
+  width: max-content;
+  min-width: 100%;
+  animation: notification-marquee 28s linear infinite;
+}
+
+.notification-marquee:hover {
+  animation-play-state: paused;
+}
+
+.notification-marquee a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 38px;
+  padding: 8px 24px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.notification-marquee a:hover {
+  color: #ffffff;
+}
+
+.notification-marquee i {
+  color: #ffd66b;
+}
+
+.notification-marquee span {
+  color: #ffd66b;
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@keyframes notification-marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 1199px) {
+  .site-notification {
+    top: 64px;
+  }
+}
+
+@media (max-width: 768px) {
+  .notification-marquee {
+    animation-duration: 20s;
+  }
+
+  .notification-marquee a {
+    min-height: 36px;
+    padding: 7px 18px;
+    font-size: 0.86rem;
+  }
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -4958,6 +5037,157 @@ section,
 /*--------------------------------------------------------------
 # Sponsors Section
 --------------------------------------------------------------*/
+.sponsors {
+  position: relative;
+  background:
+    linear-gradient(180deg, var(--background-color) 0%, color-mix(in srgb, var(--accent-color), transparent 96%) 100%);
+}
+
+.sponsors .section-title {
+  padding-bottom: 42px;
+}
+
+.sponsors .section-title p {
+  color: color-mix(in srgb, var(--default-color), transparent 24%);
+}
+
+.sponsors .sponsor-tier {
+  margin-bottom: 42px;
+}
+
+.sponsors .sponsor-tier:last-child {
+  margin-bottom: 0;
+}
+
+.sponsors .sponsor-tier-heading {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.sponsors .tier-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  color: var(--heading-color);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.sponsors .sponsor-tier-gold .tier-badge {
+  background: linear-gradient(135deg, #fff4c2 0%, #d7a93b 100%);
+  box-shadow: 0 12px 30px color-mix(in srgb, #d7a93b, transparent 72%);
+}
+
+.sponsors .sponsor-tier-silver .tier-badge {
+  background: linear-gradient(135deg, #f7f9fb 0%, #b7c0ca 100%);
+  box-shadow: 0 12px 30px color-mix(in srgb, #9aa6b2, transparent 78%);
+}
+
+.sponsors .sponsor-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 260px;
+  padding: 34px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+  border-radius: 8px;
+  background: var(--surface-color);
+  box-shadow: 0 16px 45px color-mix(in srgb, var(--default-color), transparent 92%);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.sponsors .sponsor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 22px 55px color-mix(in srgb, var(--default-color), transparent 88%);
+}
+
+.sponsors .sponsor-card.gold {
+  border-top: 4px solid #d7a93b;
+}
+
+.sponsors .sponsor-card.silver {
+  min-height: 220px;
+  padding: 30px;
+  border-top: 4px solid #a8b2bd;
+}
+
+.sponsors .sponsor-logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 130px;
+}
+
+.sponsors .sponsor-card.silver .sponsor-logo-wrap {
+  min-height: 100px;
+}
+
+.sponsors .sponsor-card img {
+  width: 100%;
+  max-width: 360px;
+  max-height: 115px;
+  object-fit: contain;
+}
+
+.sponsors .sponsor-card.gold img {
+  max-width: 430px;
+  max-height: 130px;
+}
+
+.sponsors .sponsor-card.silver img {
+  max-width: 310px;
+  max-height: 86px;
+}
+
+.sponsors .sponsor-card h3 {
+  margin: 0;
+  color: var(--heading-color);
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.sponsors .sponsor-card.gold h3 {
+  font-size: 1.18rem;
+}
+
+@media (max-width: 768px) {
+  .sponsors .section-title {
+    padding-bottom: 34px;
+  }
+
+  .sponsors .sponsor-tier {
+    margin-bottom: 34px;
+  }
+
+  .sponsors .sponsor-card,
+  .sponsors .sponsor-card.silver {
+    min-height: 210px;
+    padding: 26px 22px;
+  }
+
+  .sponsors .sponsor-logo-wrap,
+  .sponsors .sponsor-card.silver .sponsor-logo-wrap {
+    min-height: 92px;
+  }
+
+  .sponsors .sponsor-card.gold img,
+  .sponsors .sponsor-card.silver img {
+    max-width: 100%;
+    max-height: 82px;
+  }
+}
+
 .sponsors .clients-wrap {
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   border-left: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
@@ -5349,6 +5579,118 @@ section,
 .terms-of-service .tos-content .content-section .alert-box .alert-content p {
   margin: 0;
   font-size: 0.95rem;
+}
+
+.presentation-resource-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 24px 0;
+  padding: 26px 28px;
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 76%);
+  border-radius: 8px;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), white 93%), color-mix(in srgb, var(--accent-color), white 84%));
+  box-shadow: 0 12px 32px color-mix(in srgb, var(--default-color), transparent 92%);
+}
+
+#paper-presentation-guidelines {
+  scroll-margin-top: 140px;
+}
+
+.presentation-resource-copy {
+  max-width: 720px;
+}
+
+.presentation-resource-copy span {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 10px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent-color), white 86%);
+  color: var(--accent-color);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.presentation-resource-copy h3,
+.presentation-resource-copy h4 {
+  margin: 0 0 10px;
+  color: var(--heading-color);
+  font-size: 1.35rem;
+  line-height: 1.35;
+}
+
+.presentation-resource-copy p {
+  margin: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 18%);
+  line-height: 1.65;
+}
+
+.presentation-resource-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+  min-width: 260px;
+}
+
+.presentation-resource-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.presentation-template-embed {
+  margin: 0 0 24px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 86%);
+  border-radius: 8px;
+  background: var(--surface-color);
+  overflow: hidden;
+}
+
+.presentation-template-embed object {
+  display: block;
+  width: 100%;
+  min-height: 220px;
+}
+
+.presentation-template-embed object p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  margin: 0;
+  padding: 24px;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .presentation-resource-card {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .presentation-resource-actions {
+    justify-content: flex-start;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .presentation-resource-card {
+    padding: 22px;
+  }
+
+  .presentation-resource-actions .btn {
+    width: 100%;
+    white-space: normal;
+  }
 }
 
 .terms-of-service .tos-content .content-section .prohibited-list {

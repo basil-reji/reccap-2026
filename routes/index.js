@@ -8,6 +8,14 @@ const cameraReadySubmissionPdf = encodeURI(
 );
 const schedulePdf = encodeURI("/RECCAP Schedule v1.pdf");
 const paperIdPdf = encodeURI("/RECCAP Paper ID v2.pdf");
+const paperPresentationUploadForm = "https://forms.gle/5sdG8P23UMV1DTzPA";
+const slideTemplatePptx = encodeURI("/RECCAP2026_Slide-template.pptx");
+
+router.use(function (req, res, next) {
+  res.locals.paperPresentationUploadForm = paperPresentationUploadForm;
+  res.locals.slideTemplatePptx = slideTemplatePptx;
+  next();
+});
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
